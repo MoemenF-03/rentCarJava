@@ -5,19 +5,18 @@ A comprehensive desktop application for car rental management built using JavaFX
 ## 📸 Screenshots
 
 ### Login Screen
-![Login Screen](./interface_login)
-
+![Login Screen](./interface_login.png)
 ### Dashboard
-![Dashboard](https://raw.githubusercontent.com/yourusername/rentcar-app/main/screenshots/dashboard.png)
+![Dashboard](./dashboard.png)
 
 ### Rent Car Interface
-![Rent Car Interface](https://raw.githubusercontent.com/yourusername/rentcar-app/main/screenshots/rentcar.png)
+![Rent Car Interface](./rent_car.png)
 
 ### All Cars Inventory
-![All Cars Inventory](https://raw.githubusercontent.com/yourusername/rentcar-app/main/screenshots/allcars.png)
+![All Cars Inventory](./all_cars.png)
 
 ### Client Management
-![Client Management](https://raw.githubusercontent.com/yourusername/rentcar-app/main/screenshots/clients.png)
+![Client Management](./clients.png)
 
 ## ✨ Features
 
@@ -151,26 +150,30 @@ rentcar-app/
 ## 🔍 Class Diagram
 
 ```
-  +----------------+       +-------------------+       +----------------+
-  |     Client     |<----->|      Rental       |<----->|      Car       |
-  +----------------+       +-------------------+       +----------------+
-  | - clientID     |       | - rentalID        |       | - carID        |
-  | - name         |       | - startDate       |       | - make         |
-  | - contact      |       | - endDate         |       | - model        |
-  | - address      |       | - carID           |       | - year         |
-  | - driverLicense|       | - clientID        |       | - regNumber    |
-  | - rentals      |       | - totalCost       |       | - status       |
-  +----------------+       | - status          |       | - dailyRate    |
-                           +-------------------+       +----------------+
+  +----------------+       +-------------------+       +----------------+       +----------------+
+  |     Client     |<----->|       Rent        |<----->|       Car      |<----->|     Admin      |
+  +----------------+       +-------------------+       +----------------+       +----------------+
+  | - client_id    |       | - id_rent         |       | - id           |       | - id           |
+  | - firstname    |       | - id_car          |       | - brand        |       | - pass         |
+  | - lastname     |       | - id_client       |       | - model        |       | - firstname    |
+  | - phone        |       | - id_admin        |       | - price        |       | - lastname     |
+  | - adress       |       | - total_earn      |       | - available    |       +----------------+
+  +----------------+       | - date_rent       |       | - car_desc     |       
+                           | - date_return     |       +----------------+      +----------------+
+                           +-------------------+                               |  Access_Track   |
+                                                                               +----------------+
+                                                                               | - track_id     |
+                                                                               | - admin_id     |
+                                                                               | - access       |
+                                                                               | - access_time  |
+                                                                               +----------------+
+                           
 ```
 
 ## 🌟 Usage
 
 ### Login
-- Use predefined admin credentials:
-  - Username: `admin`
-  - Password: `admin123`
-- Or create a new user through the database directly
+ create a new user through the database directly
 
 ### Car Management
 1. Navigate to the "Cars" section
@@ -197,9 +200,6 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📜 License
-
-This project is licensed under the **MIT License**. See LICENSE file for details.
 
 ## 🙏 Credits
 
