@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomePageController">
+   
+    <children>
+      <Pane layoutY="-1.0" prefHeight="502.0" prefWidth="211.0" style="-fx-background-color: #211336;" styleClass="navbar" stylesheets="@Main.css">
+         <children>
+            <ImageView fitHeight="108.0" fitWidth="115.0" layoutX="55.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@—Pngtree—sport%20car%20logo%20vector_6398339.png" />
+               </image>
+            </ImageView>
+            <Button id="logout_btn" fx:id="logout_btn" layoutX="14.0" layoutY="434.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="159.0" style="-fx-background-color: transparent;" styleClass="logout-btn" text="                       " />
+            <Label layoutX="57.0" layoutY="453.0" text="LOGOUT" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <ImageView id="logout_btn" fitHeight="25.0" fitWidth="27.0" layoutX="22.0" layoutY="449.0" styleClass="logout-btn">
+               <image>
+                  <Image url="@logout.png" />
+               </image>
+            </ImageView>
+            <Line endX="103.20002746582031" endY="-1.52587890625E-5" layoutX="107.0" layoutY="134.0" startX="-108.00001525878906" startY="-1.52587890625E-5" stroke="WHITE" />
+            <AnchorPane layoutX="8.0" layoutY="150.0" prefHeight="58.0" prefWidth="194.0">
+               <children>
+                  <Button id="Dashboard_btn" fx:id="Dashboard_btn" layoutX="21.0" layoutY="2.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="206.0" style="-fx-background-color: transparent;" styleClass="nav-links" stylesheets="@Main.css" text="    Dashboard" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Button>
+                  <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="21.0" layoutY="11.0">
+                     <image>
+                        <Image url="@analytique.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="8.0" layoutY="198.0" prefHeight="58.0" prefWidth="194.0">
+               <children>
+                  <Button id="rent_btn_p" fx:id="rent_btn_p" layoutX="21.0" layoutY="5.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="174.0" style="-fx-background-color: transparent;" styleClass="nav-links" stylesheets="@Main.css" text="           Rent a car" textFill="WHITE" />
+                  <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="21.0" layoutY="11.0">
+                     <image>
+                        <Image url="@av_cars.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="8.0" layoutY="245.0" prefHeight="58.0" prefWidth="194.0">
+               <children>
+                  <Button id="cars_btn" fx:id="cars_btn" layoutX="21.0" layoutY="2.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="174.0" style="-fx-background-color: transparent;" styleClass="nav-links" stylesheets="@Main.css" text="           All Cars" textFill="WHITE" />
+                  <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="21.0" layoutY="11.0">
+                     <image>
+                        <Image url="@cars.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="8.0" layoutY="294.0" prefHeight="58.0" prefWidth="194.0">
+               <children>
+                  <Button id="clients_btn" fx:id="clients_btn" layoutX="21.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="174.0" style="-fx-background-color: transparent;" styleClass="nav-links" stylesheets="@Main.css" text="           Clients" textFill="WHITE" />
+                  <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="21.0" layoutY="11.0">
+                     <image>
+                        <Image url="@les-clients.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Line endX="103.20002746582031" endY="-1.52587890625E-5" layoutX="108.0" layoutY="352.0" startX="-108.00001525878906" startY="-1.52587890625E-5" stroke="WHITE" />
+            <Text fill="WHITE" layoutX="19.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome ! ," />
+            <Text id="Admin_Name_Welcome" fx:id="Admin_Name_Welcome" fill="WHITE" layoutX="46.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin_Name">
+               <font>
+                  <Font name="Barlow Condensed Bold" size="26.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <AnchorPane id="dashboardPane" fx:id="dashboardPane" layoutX="210.0" prefHeight="500.0" prefWidth="790.0">
+         <children>
+            <Pane layoutX="20.0" layoutY="20.0" prefHeight="194.0" prefWidth="352.0" style="-fx-background-color: #211336;">
+               <children>
+                  <Text fill="WHITE" layoutX="116.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Income">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="113.0" fitWidth="106.0" layoutX="247.0" layoutY="45.0">
+                     <image>
+                        <Image url="@money-management.png" />
+                     </image>
+                  </ImageView>
+                  <Text id="tot_income" fx:id="tot_earn" fill="WHITE" layoutX="10.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="120.000 TND">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="440.0" layoutY="20.0" prefHeight="193.0" prefWidth="310.0" style="-fx-background-color: #211336;">
+               <children>
+                  <Text fill="WHITE" layoutX="83.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available Cars">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="91.0" fitWidth="86.0" layoutX="193.0" layoutY="44.0">
+                     <image>
+                        <Image url="@av_cars.png" />
+                     </image>
+                  </ImageView>
+                  <Text id="tot_cars_available" fx:id="av_cars_number" fill="WHITE" layoutX="86.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="43">
+                     <font>
+                        <Font name="System Bold" size="50.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <AnchorPane layoutX="20.0" layoutY="221.0" prefHeight="271.0" prefWidth="734.0" styleClass="white-bg" stylesheets="@Main.css">
+               <children>
+                  <Label layoutX="92.0" layoutY="73.0" prefHeight="29.0" prefWidth="67.0" text="First Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="admin_profile_name" fx:id="admin_profile_name" layoutX="176.0" layoutY="79.0" styleClass="text-field" stylesheets="@Main.css" />
+                  <Label layoutX="92.0" layoutY="114.0" prefHeight="29.0" prefWidth="67.0" text="Last Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="admin_profile_last" fx:id="admin_profile_last" layoutX="176.0" layoutY="116.0" styleClass="text-field" stylesheets="@Main.css" />
+                  <Label layoutX="92.0" layoutY="152.0" prefHeight="29.0" prefWidth="67.0" text="password">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="admin_profile_id" fx:id="admin_profile_pass" layoutX="176.0" layoutY="154.0" styleClass="text-field" stylesheets="@Main.css" />
+                  <Button id="update_admin_btn" fx:id="update_admin_infos" layoutX="100.0" layoutY="196.0" mnemonicParsing="false" text="Change" />
+                  <Button id="delete_acc_btn" fx:id="delete_acc" layoutX="605.0" layoutY="219.0" mnemonicParsing="false" style="-fx-background-color: #ac0e0e;" text="Delete acc" />
+                  <Text layoutX="29.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Info">
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="127.0" fitWidth="131.0" layoutX="367.0" layoutY="66.0">
+                     <image>
+                        <Image url="@admin-avec-roues-dentees.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="194.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="admin_id :">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="admin_id_infos" layoutX="246.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="72.00000000000011">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="carsPane" fx:id="carsPane" layoutX="210.0" prefHeight="500.0" prefWidth="790.0" visible="false">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="18.0" prefHeight="215.0" prefWidth="762.0" styleClass="white-bg" stylesheets="@Main.css">
+               <children>
+                  <Label layoutX="32.0" layoutY="22.0" style="-fx-padding: 10px;" styleClass="label_" stylesheets="@Main.css" text="car brand :">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rent_model" layoutX="29.0" layoutY="67.0" style="-fx-padding: 10px;" styleClass="label_" stylesheets="@Main.css" text="car model:">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="154.0" prefHeight="26.0" prefWidth="134.0" style="-fx-padding: 10px;" styleClass="label_" stylesheets="@Main.css" text="car description :">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="46.0" layoutY="108.0" style="-fx-padding: 10px;" styleClass="label_" stylesheets="@Main.css" text="status :">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField id="car_brand_field" fx:id="cars_brand" layoutX="129.0" layoutY="25.0" promptText="brand name" styleClass="text-field" stylesheets="@Main.css" />
+                  <TextArea id="car_desc" fx:id="cars_desc" layoutX="148.0" layoutY="160.0" prefHeight="40.0" prefWidth="230.0" promptText="car description">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </TextArea>
+                  <Label layoutX="325.0" layoutY="21.0" style="-fx-padding: 10px;" styleClass="label_" stylesheets="@Main.css" text="car id :">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField id="car_id_field" fx:id="cars_id" layoutX="388.0" layoutY="25.0" promptText="type id for the car" styleClass="text-field" stylesheets="@Main.css" />
+                  <ComboBox id="car_status" fx:id="cars_status" layoutX="128.0" layoutY="118.0" prefWidth="150.0" promptText="Choose" />
+                  <Button id="insert_car_btn" fx:id="cars_insert_btn" layoutX="463.0" layoutY="145.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="134.0" style="-fx-background-color: #0d7b4d;" text="Insert" />
+                  <Button id="clear_car_info" fx:id="cars_clear_btn" layoutX="613.0" layoutY="145.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="77.0" style="-fx-background-color: #19437b;" text="Clear" />
+                  <Button id="update_car_infos" fx:id="cars_update_btn" layoutX="564.0" layoutY="23.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="78.0" text="Update" />
+                  <Button id="delete_car" fx:id="cars_delete_btn" layoutX="651.0" layoutY="23.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="78.0" style="-fx-background-color: #a10e0e;" text="Delete" />
+                  <TextField id="car_year_field" fx:id="cars_model" layoutX="128.0" layoutY="70.0" promptText="year" styleClass="text-field" stylesheets="@Main.css" />
+                  <Label layoutX="328.0" layoutY="66.0" style="-fx-padding: 10px;" styleClass="label_" stylesheets="@Main.css" text="Price:">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField id="car_price_field" fx:id="cars_price" layoutX="388.0" layoutY="70.0" promptText="price /24h" styleClass="text-field" stylesheets="@Main.css" />
+               </children></AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="242.0" prefHeight="242.0" prefWidth="762.0" styleClass="white-bg" stylesheets="@Main.css">
+               <children>
+                  <TableView id="cars_table" fx:id="cars_table" layoutX="9.0" layoutY="35.0" prefHeight="202.0" prefWidth="743.0" stylesheets="@Main.css">
+                    <columns>
+                      <TableColumn id="cars_col_id" fx:id="cars_col_id" prefWidth="75.0" text="Car_ID" />
+                      <TableColumn id="cars_col_brand" fx:id="cars_col_brand" prefWidth="182.4000244140625" text="Brand" />
+                        <TableColumn id="cars_col_model" fx:id="cars_col_model" minWidth="0.0" prefWidth="219.99996948242188" text="Model" />
+                        <TableColumn id="cars_col_status" fx:id="cars_col_status" prefWidth="125.59991455078125" text="Status" />
+                        <TableColumn id="cars_col_price" fx:id="cars_col_price" prefWidth="136.79997558593755" text="Price / 24H" />
+                    </columns>
+                  </TableView>
+                  <TextField id="search_car" layoutX="14.0" layoutY="1.0" promptText="search" />
+               </children></AnchorPane>
+         </children></AnchorPane>
+      <AnchorPane id="rentPane" fx:id="rentPane" layoutX="210.0" prefHeight="500.0" prefWidth="1000.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="-210.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="18.0" prefHeight="215.0" prefWidth="762.0" styleClass="white-bg" stylesheets="@Main.css">
+               <children>
+                  <Label layoutX="48.0" layoutY="14.0" style="-fx-padding: 10px;" styleClass="label_" stylesheets="@Main.css" text="car id :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField id="car_id_rent" fx:id="rent_carid" layoutX="110.0" layoutY="19.0" promptText="type id for the car" styleClass="text-field" stylesheets="@Main.css" />
+                  <Label layoutX="288.0" layoutY="16.0" style="-fx-padding: 10px;" styleClass="label_" stylesheets="@Main.css" text="Client_Id:" />
+                  <TextField id="client_id_rent" fx:id="rent_clientid" layoutX="366.0" layoutY="19.0" promptText="Client_ID" styleClass="text-field" stylesheets="@Main.css" />
+                  <Label layoutX="57.0" layoutY="116.0" styleClass="label_" stylesheets="@Main.css" text="Date Rent :" />
+                  <DatePicker id="date_rent" fx:id="date_rent" layoutX="147.0" layoutY="113.0" />
+                  <Label layoutX="48.0" layoutY="167.0" styleClass="label_" stylesheets="@Main.css" text="Date Return :" />
+                  <DatePicker id="date_return" fx:id="date_return" layoutX="147.0" layoutY="164.0" />
+                  <Label fx:id="tot_price_text" layoutX="610.0" layoutY="23.0" text="Total : 0.00 TND">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button id="get_tot_price" fx:id="get_tot_price_btn" layoutX="604.0" layoutY="62.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="138.0" style="-fx-background-color: #059616;" text="Get total price" textFill="#059616" />
+                  <Button id="rent_btn" fx:id="rent_btn" layoutX="632.0" layoutY="146.0" mnemonicParsing="false" text="Rent">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="108.0" fitWidth="110.0" layoutX="408.0" layoutY="87.0">
+                     <image>
+                        <Image url="@transaction.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="242.0" prefHeight="242.0" prefWidth="762.0" styleClass="white-bg" stylesheets="@Main.css">
+               <children>
+                  <TableView id="av_cars_table" fx:id="available_table" layoutX="9.0" layoutY="35.0" prefHeight="202.0" prefWidth="743.0" stylesheets="@Main.css">
+                     <columns>
+                        <TableColumn id="av_cars_col_id" fx:id="available_col_id" prefWidth="75.0" text="Car_ID" />
+                        <TableColumn id="av_cars_col_brand" fx:id="available_col_brand" prefWidth="182.4000244140625" text="Brand" />
+                        <TableColumn id="av_cars_col_model" fx:id="available_col_model" minWidth="0.0" prefWidth="219.99996948242188" text="Model" />
+                        <TableColumn id="av_cars_col_status" fx:id="available_col_status" prefWidth="125.59991455078125" text="Status" />
+                        <TableColumn id="av_cars_col_price" fx:id="available_col_price" prefWidth="136.79997558593755" text="Price" />
+                     </columns>
+                  </TableView>
+                  <Text layoutX="44.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available Cars" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="carsPane" fx:id="clientsPane" layoutX="220.0" layoutY="10.0" prefHeight="500.0" prefWidth="790.0" visible="false">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="18.0" prefHeight="215.0" prefWidth="762.0" styleClass="white-bg" stylesheets="@Main.css">
+               <children>
+                  <Label layoutX="32.0" layoutY="22.0" style="-fx-padding: 10px;" styleClass="label_" stylesheets="@Main.css" text="Client id:">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rent_model1" layoutX="29.0" layoutY="67.0" style="-fx-padding: 10px;" styleClass="label_" stylesheets="@Main.css" text="FirstName :">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="43.0" layoutY="159.0" prefHeight="41.0" prefWidth="173.0" style="-fx-padding: 10px;" styleClass="label_" stylesheets="@Main.css" text="Adress:">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="car_brand_field" fx:id="Clients_id" layoutX="129.0" layoutY="25.0" promptText="cin" styleClass="text-field" stylesheets="@Main.css" />
+                  <TextArea id="car_desc" fx:id="Clients_adress" layoutX="124.0" layoutY="162.0" prefHeight="40.0" prefWidth="230.0" promptText="client adress">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </TextArea>
+                  <Label layoutX="325.0" layoutY="21.0" style="-fx-padding: 10px;" styleClass="label_" stylesheets="@Main.css" text="Phone:">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField id="car_id_field" fx:id="Clients_phone" layoutX="388.0" layoutY="25.0" promptText="phone number" styleClass="text-field" stylesheets="@Main.css" />
+                  <Button id="insert_car_btn" fx:id="Clients_btn_insert" layoutX="463.0" layoutY="145.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="134.0" style="-fx-background-color: #0d7b4d;" text="Insert" />
+                  <Button id="clear_car_info" fx:id="Clients_btn_clear" layoutX="613.0" layoutY="145.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="77.0" style="-fx-background-color: #19437b;" text="Clear" />
+                  <Button id="update_car_infos" fx:id="Clients_btn_update" layoutX="564.0" layoutY="23.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="78.0" text="Update" />
+                  <Button id="delete_car" fx:id="Clients_btn_delete" layoutX="651.0" layoutY="23.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="78.0" style="-fx-background-color: #a10e0e;" text="Delete" />
+                  <TextField id="car_year_field" fx:id="Clients_firstname" layoutX="128.0" layoutY="70.0" promptText="client firstname" styleClass="text-field" stylesheets="@Main.css" />
+                  <Label fx:id="rent_model11" layoutX="29.0" layoutY="115.0" style="-fx-padding: 10px;" styleClass="label_" stylesheets="@Main.css" text="LastName:">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField id="car_year_field" fx:id="Clients_lastname" layoutX="128.0" layoutY="118.0" promptText="client lastname" styleClass="text-field" stylesheets="@Main.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="242.0" prefHeight="242.0" prefWidth="762.0" styleClass="white-bg" stylesheets="@Main.css">
+               <children>
+                  <TableView id="cars_table" fx:id="clients_table" layoutX="9.0" layoutY="35.0" prefHeight="202.0" prefWidth="743.0" stylesheets="@Main.css">
+                     <columns>
+                        <TableColumn id="cars_col_id" fx:id="clients_col_id" prefWidth="75.0" text="CIN" />
+                        <TableColumn id="cars_col_brand" fx:id="clients_col_firstname" prefWidth="116.800048828125" text="FirstName" />
+                        <TableColumn id="cars_col_model" fx:id="clients_col_lastname" minWidth="0.0" prefWidth="168.79989624023438" text="LastName" />
+                        <TableColumn id="cars_col_status" fx:id="clients_col_phone" prefWidth="126.13330078125" text="Phone" />
+                        <TableColumn id="cars_col_price" fx:id="clients_col_adress" prefWidth="256.26666259765625" text="Adress" />
+                     </columns>
+                  </TableView>
+                  <Text layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Clients :" />
+                  <Text fx:id="nb_clients" layoutX="91.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

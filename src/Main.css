@@ -1,0 +1,204 @@
+/* Root styles */
+.root {
+    -fx-background-color: #f0f2f5;
+    -fx-font-family: 'Arial';
+}
+
+/* White background panes */
+.white-bg {
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);
+}
+
+/* Navigation buttons */
+.home-btn {
+    -fx-padding: 0 0 0 35px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+    -fx-background-color: #392359;
+    -fx-background-radius: 8px;
+}
+
+/* Logout button */
+.logout-btn {
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    -fx-opacity: 0.8;
+}
+
+/* Table styles */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 8px;
+    -fx-padding: 0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #211336;
+    -fx-background-radius: 8px 8px 0 0;
+    -fx-padding: 5px;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+    -fx-size: 45px;
+    -fx-border-width: 0 0 0 0;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+}
+
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f8f9fa;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #e3e6f0;
+}
+
+/* Text fields */
+.text-field {
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 8px;
+}
+
+.text-field:focused {
+    -fx-border-color: #211336;
+    -fx-background-color: white;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #211336;
+    -fx-text-fill: white;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-padding: 8px 15px;
+    -fx-transition: all 0.3s ease;
+}
+
+.button:hover {
+    -fx-background-color: #392359;
+}
+
+/* ComboBox styling */
+.combo-box {
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.combo-box:focused {
+    -fx-border-color: #211336;
+}
+
+.combo-box .list-cell {
+    -fx-padding: 8px;
+}
+
+/* DatePicker styling */
+.date-picker {
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 5px;
+}
+
+.date-picker:focused {
+    -fx-border-color: #211336;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #211336;
+    -fx-background-radius: 0 5px 5px 0;
+}
+
+.date-picker .arrow-button:hover {
+    -fx-background-color: #392359;
+}
+
+.date-picker .arrow-button .arrow {
+    -fx-background-color: white;
+}
+
+/* TextArea styling */
+.text-area {
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.text-area:focused {
+    -fx-border-color: #211336;
+    -fx-background-color: white;
+}
+
+.text-area .content {
+    -fx-background-color: transparent;
+}
+
+/* Set a common font for the navigation links */
+.nav-links {
+    -fx-font-family: "Arial"; /* Use Arial font */
+    -fx-font-size: 15px; /* Font size for the links */
+    -fx-text-fill: white; /* Text color */
+    
+    -fx-cursor: hand; /* Cursor changes to hand on hover */
+    -fx-background-insets: 0, 0; /* Remove background insets */
+    -fx-background-color: transparent; /* Transparent background by default */
+    -fx-spacing: 20px; /* Space between the links */
+    -fx-transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Change the color and apply hover effect */
+.nav-links:hover {
+    -fx-text-fill: #FFD700; /* Change the text color to gold on hover */
+    -fx-padding: 10px 20px; /* Add extra padding when hovered */
+    -fx-scale-x: 1.1; /* Slight zoom effect on hover */
+    -fx-scale-y: 1.1; /* Slight zoom effect on hover */
+    -fx-background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background on hover */
+    -fx-background-radius: 5px; /* Rounded corners for the background */
+}
+
+/* Optional: Add spacing at the top and bottom of the navigation */
+.navbar {
+    -fx-padding: 15px 0; /* Padding at the top and bottom of the navbar */
+    -fx-background-color: #333; /* Dark background color for the navbar */
+    -fx-alignment: center; /* Center align the nav items */
+}
+
+
+.get_tot_price{
+    -fx-background-color:transparent;
+    -fx-text-fill:#059616;
+}
+.label_ {
+    -fx-font-family: "Arial, Helvetica, sans-serif";  /* Common and modern font */
+    -fx-font-size: 14px;  /* Adjust size for readability */
+    -fx-text-fill: black;  /* White text color */
+    -fx-padding: 5px 10px;  /* Padding for spacing */
+    -fx-background-color: transparent;  /* No background by default */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 2, 0, 0, 1);  /* Subtle shadow effect */
+}

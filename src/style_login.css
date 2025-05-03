@@ -1,0 +1,80 @@
+/* Input Fields (TextField and PasswordField) */
+.input-field {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-border-color: transparent transparent black transparent;
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 1 0;
+    -fx-prompt-text-fill: black;
+}
+/* Admin Panel Text */
+/* Admin Panel Text */
+#admin_panel_text,
+#reset_password_text{
+    -fx-letter-spacing: 10px; /* Adds letter spacing for better readability */
+    -fx-font-size: 24px; /* Larger font size */
+    -fx-font-weight: bold;
+    -fx-text-fill: black; /* Ensures the text is black */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 2, 0.5, 0, 1); /* Slight black shadow */
+    -fx-alignment: center; /* Centers the text */
+    -fx-layout-x: 120px;  /* Horizontal position */
+    -fx-layout-y: 20px;   /* Vertical position */
+}
+
+
+/* Forget Password Text */
+.forget-password-text{
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+#back_text{
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+#login_container {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 4);
+    -fx-background-color: white; /* Optional for ensuring visibility */
+    -fx-border-radius: 5px; /* Matches the rectangle's rounded corners */
+}
+
+#forget_pass:hover,
+#back_text:hover{
+    -fx-cursor: hand;
+    -fx-underline: true;  /* Underlines the text on hover */
+}
+
+
+#btn_login,
+#btn_send_email{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+  
+    -fx-transition: -fx-background-color 0.3s ease; /* Smooth color transition */
+}
+
+#btn_login:hover {
+    
+    -fx-cursor: hand;
+}
+#desc {
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-text-fill: #555555; /* Soft dark gray text color */
+    -fx-font-size: 12px; /* Smaller font size */
+    -fx-font-family: 'Arial', sans-serif; /* Clean, modern font */
+    -fx-padding: 8px; /* Some padding around the text */
+    -fx-wrap-text: true; /* Ensures text wraps within the text area */
+    -fx-border-width: 0; /* No border */
+    -fx-border-style: none; /* Removes border style */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.5, 0, 2); /* Subtle shadow effect */
+}
+
+
+#login_container, #forget_password_container {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 4);
+    -fx-background-color: white;
+    -fx-border-radius: 5px;
+}
