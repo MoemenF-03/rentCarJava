@@ -1,4 +1,11 @@
 # 🚗 RentCar Management System
+![Status](https://img.shields.io/badge/Status-University%20Project-brightgreen)
+![Java](https://img.shields.io/badge/Java-11%2B-orange)
+![JavaFX](https://img.shields.io/badge/JavaFX-11%2B-blue)
+![MySQL](https://img.shields.io/badge/MySQL-8.0%2B-005C84)
+![Maven](https://img.shields.io/badge/Maven-3.x-C71A36)
+![MVC](https://img.shields.io/badge/Pattern-MVC-yellow)
+
 University Project :
 A comprehensive desktop application for car rental management built using JavaFX and MySQL. This object-oriented application provides an intuitive interface for managing car rentals, inventory, and customer information.
 
